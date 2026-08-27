@@ -17,7 +17,6 @@
 
 <title>Lead to Salesforce</title>
 
-
 <style>
 
 /* =========================================================
@@ -69,6 +68,10 @@
 
 }
 
+
+/* =========================================================
+   HTML
+========================================================= */
 
 html {
 
@@ -261,7 +264,9 @@ body::after {
 }
 
 
-/* TOP LIGHT */
+/* =========================================================
+   TOP LIGHT
+========================================================= */
 
 .form-container::before {
 
@@ -290,7 +295,9 @@ body::after {
 }
 
 
-/* INNER GLOW */
+/* =========================================================
+   INNER GLOW
+========================================================= */
 
 .form-container::after {
 
@@ -370,7 +377,9 @@ form {
 }
 
 
-/* TITLE */
+/* =========================================================
+   TITLE
+========================================================= */
 
 .form-header h1 {
 
@@ -406,7 +415,9 @@ form {
 }
 
 
-/* SUBTITLE */
+/* =========================================================
+   SUBTITLE
+========================================================= */
 
 .form-header p {
 
@@ -576,16 +587,6 @@ form {
 }
 
 
-.required {
-
-    color:
-        var(--cyan-light);
-
-    margin-left: 2px;
-
-}
-
-
 /* =========================================================
    INPUT / SELECT / TEXTAREA
 ========================================================= */
@@ -630,7 +631,9 @@ form {
 }
 
 
-/* INPUT + SELECT */
+/* =========================================================
+   INPUT + SELECT
+========================================================= */
 
 .field input,
 .field select {
@@ -644,7 +647,9 @@ form {
 }
 
 
-/* TEXTAREA */
+/* =========================================================
+   TEXTAREA
+========================================================= */
 
 .field textarea {
 
@@ -663,7 +668,9 @@ form {
 }
 
 
-/* PLACEHOLDER */
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
 
 .field input::placeholder,
 .field textarea::placeholder {
@@ -674,7 +681,9 @@ form {
 }
 
 
-/* SELECT */
+/* =========================================================
+   SELECT
+========================================================= */
 
 .field select {
 
@@ -896,7 +905,9 @@ form {
 }
 
 
-/* BUTTON SHINE */
+/* =========================================================
+   BUTTON SHINE
+========================================================= */
 
 .submit-button::before {
 
@@ -963,13 +974,17 @@ form {
 @keyframes buttonGradient {
 
     0% {
+
         background-position:
             0% 50%;
+
     }
 
     100% {
+
         background-position:
             100% 50%;
+
     }
 
 }
@@ -1189,7 +1204,6 @@ and (
     id="leadForm"
     action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Df600000TQIF7"
     method="POST"
-    novalidate
 >
 
 
@@ -1203,10 +1217,6 @@ and (
     value="00Df600000TQIF7"
 >
 
-
-<!--
-    CHANGE THIS TO YOUR ACTUAL THANK-YOU PAGE
--->
 
 <input
     type="hidden"
@@ -1237,17 +1247,15 @@ and (
 <div class="form-grid">
 
 
-<!-- FIRST NAME -->
+<!-- =========================================================
+     FIRST NAME
+========================================================= -->
 
 <div class="field">
 
     <label for="first_name">
-
         First Name
-        <span class="required">*</span>
-
     </label>
-
 
     <input
         id="first_name"
@@ -1256,31 +1264,20 @@ and (
         maxlength="40"
         placeholder="Enter first name"
         autocomplete="given-name"
-        required
     >
-
-
-    <div
-        class="error-message"
-        id="first_name_error"
-    >
-        Please enter your first name.
-    </div>
 
 </div>
 
 
-<!-- LAST NAME -->
+<!-- =========================================================
+     LAST NAME
+========================================================= -->
 
 <div class="field">
 
     <label for="last_name">
-
         Last Name
-        <span class="required">*</span>
-
     </label>
-
 
     <input
         id="last_name"
@@ -1289,31 +1286,20 @@ and (
         maxlength="80"
         placeholder="Enter last name"
         autocomplete="family-name"
-        required
     >
-
-
-    <div
-        class="error-message"
-        id="last_name_error"
-    >
-        Please enter your last name.
-    </div>
 
 </div>
 
 
-<!-- PHONE -->
+<!-- =========================================================
+     PHONE
+========================================================= -->
 
 <div class="field">
 
     <label for="phone">
-
         Phone
-        <span class="required">*</span>
-
     </label>
-
 
     <input
         id="phone"
@@ -1322,31 +1308,20 @@ and (
         maxlength="40"
         placeholder="Enter phone number"
         autocomplete="tel"
-        required
     >
-
-
-    <div
-        class="error-message"
-        id="phone_error"
-    >
-        Please enter a valid phone number.
-    </div>
 
 </div>
 
 
-<!-- EMAIL -->
+<!-- =========================================================
+     EMAIL
+========================================================= -->
 
 <div class="field">
 
     <label for="email">
-
         Email
-        <span class="required">*</span>
-
     </label>
-
 
     <input
         id="email"
@@ -1355,31 +1330,20 @@ and (
         maxlength="80"
         placeholder="Enter email address"
         autocomplete="email"
-        required
     >
-
-
-    <div
-        class="error-message"
-        id="email_error"
-    >
-        Please enter a valid email address.
-    </div>
 
 </div>
 
 
-<!-- COMPANY -->
+<!-- =========================================================
+     COMPANY
+========================================================= -->
 
 <div class="field">
 
     <label for="company">
-
         Company
-        <span class="required">*</span>
-
     </label>
-
 
     <input
         id="company"
@@ -1388,30 +1352,20 @@ and (
         maxlength="40"
         placeholder="Enter company name"
         autocomplete="organization"
-        required
     >
-
-
-    <div
-        class="error-message"
-        id="company_error"
-    >
-        Please enter your company name.
-    </div>
 
 </div>
 
 
-<!-- TITLE -->
+<!-- =========================================================
+     TITLE
+========================================================= -->
 
 <div class="field">
 
     <label for="title">
-
         Title
-
     </label>
-
 
     <input
         id="title"
@@ -1425,16 +1379,15 @@ and (
 </div>
 
 
-<!-- CITY -->
+<!-- =========================================================
+     CITY
+========================================================= -->
 
 <div class="field">
 
     <label for="city">
-
         City
-
     </label>
-
 
     <input
         id="city"
@@ -1448,16 +1401,15 @@ and (
 </div>
 
 
-<!-- COUNTRY -->
+<!-- =========================================================
+     COUNTRY
+========================================================= -->
 
 <div class="field">
 
     <label for="country_code">
-
         Country
-
     </label>
-
 
     <select
         id="country_code"
@@ -1517,16 +1469,15 @@ and (
 </div>
 
 
-<!-- STATE -->
+<!-- =========================================================
+     STATE
+========================================================= -->
 
 <div class="field">
 
     <label for="state_code">
-
         State / Province
-
     </label>
-
 
     <select
         id="state_code"
@@ -1614,16 +1565,15 @@ and (
 </div>
 
 
-<!-- WEBSITE -->
+<!-- =========================================================
+     WEBSITE
+========================================================= -->
 
 <div class="field">
 
     <label for="url">
-
         Website
-
     </label>
-
 
     <input
         id="url"
@@ -1637,16 +1587,15 @@ and (
 </div>
 
 
-<!-- DESCRIPTION -->
+<!-- =========================================================
+     DESCRIPTION
+========================================================= -->
 
 <div class="field full">
 
     <label for="description">
-
-       Description
-
+        Description
     </label>
-
 
     <textarea
         id="description"
@@ -1657,22 +1606,19 @@ and (
 </div>
 
 
-<!-- LEAD SOURCE -->
+<!-- =========================================================
+     LEAD SOURCE
+========================================================= -->
 
 <div class="field full">
 
     <label for="lead_source">
-
         Lead Source
-        <span class="required">*</span>
-
     </label>
-
 
     <select
         id="lead_source"
         name="lead_source"
-        required
     >
 
         <option value="">
@@ -1749,14 +1695,6 @@ and (
 
     </select>
 
-
-    <div
-        class="error-message"
-        id="lead_source_error"
-    >
-        Please select a lead source.
-    </div>
-
 </div>
 
 
@@ -1790,13 +1728,12 @@ and (
 <script>
 
 /* =========================================================
-   FORM VALIDATION
+   FORM SUBMISSION
 ========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-
 
         const form =
             document.getElementById(
@@ -1811,273 +1748,16 @@ document.addEventListener(
 
 
         /* =====================================================
-           SHOW ERROR
-        ===================================================== */
-
-        function showError(
-            input,
-            message
-        ) {
-
-            input.classList.add(
-                "invalid"
-            );
-
-
-            const error =
-                document.getElementById(
-                    input.id + "_error"
-                );
-
-
-            if (error) {
-
-                error.textContent =
-                    message;
-
-                error.classList.add(
-                    "show"
-                );
-
-            }
-
-        }
-
-
-        /* =====================================================
-           CLEAR ERROR
-        ===================================================== */
-
-        function clearError(
-            input
-        ) {
-
-            input.classList.remove(
-                "invalid"
-            );
-
-
-            const error =
-                document.getElementById(
-                    input.id + "_error"
-                );
-
-
-            if (error) {
-
-                error.classList.remove(
-                    "show"
-                );
-
-            }
-
-        }
-
-
-        /* =====================================================
-           LIVE ERROR CLEAR
-        ===================================================== */
-
-        form.querySelectorAll(
-            "input, select, textarea"
-        ).forEach(
-            function (field) {
-
-
-                field.addEventListener(
-                    "input",
-                    function () {
-
-                        clearError(
-                            field
-                        );
-
-                    }
-                );
-
-
-                field.addEventListener(
-                    "change",
-                    function () {
-
-                        clearError(
-                            field
-                        );
-
-                    }
-                );
-
-            }
-        );
-
-
-        /* =====================================================
-           SUBMIT
+           WEBSITE VALIDATION ONLY
+           
+           All other fields are optional.
+           If website is blank, submission continues.
+           If website is entered, it must be a valid URL.
         ===================================================== */
 
         form.addEventListener(
             "submit",
             function (event) {
-
-
-                let valid = true;
-
-
-                /* FIRST NAME */
-
-                const firstName =
-                    document.getElementById(
-                        "first_name"
-                    );
-
-
-                if (
-                    firstName.value.trim()
-                    === ""
-                ) {
-
-                    showError(
-                        firstName,
-                        "Please enter your first name."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* LAST NAME */
-
-                const lastName =
-                    document.getElementById(
-                        "last_name"
-                    );
-
-
-                if (
-                    lastName.value.trim()
-                    === ""
-                ) {
-
-                    showError(
-                        lastName,
-                        "Please enter your last name."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* PHONE */
-
-                const phone =
-                    document.getElementById(
-                        "phone"
-                    );
-
-
-                const phonePattern =
-                    /^[0-9+\-\s()]{7,20}$/;
-
-
-                if (
-                    phone.value.trim()
-                    === ""
-                    ||
-                    !phonePattern.test(
-                        phone.value.trim()
-                    )
-                ) {
-
-                    showError(
-                        phone,
-                        "Please enter a valid phone number."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* EMAIL */
-
-                const email =
-                    document.getElementById(
-                        "email"
-                    );
-
-
-                const emailPattern =
-                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
-                if (
-                    email.value.trim()
-                    === ""
-                    ||
-                    !emailPattern.test(
-                        email.value.trim()
-                    )
-                ) {
-
-                    showError(
-                        email,
-                        "Please enter a valid email address."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* COMPANY */
-
-                const company =
-                    document.getElementById(
-                        "company"
-                    );
-
-
-                if (
-                    company.value.trim()
-                    === ""
-                ) {
-
-                    showError(
-                        company,
-                        "Please enter your company name."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* LEAD SOURCE */
-
-                const leadSource =
-                    document.getElementById(
-                        "lead_source"
-                    );
-
-
-                if (
-                    leadSource.value
-                    === ""
-                ) {
-
-                    showError(
-                        leadSource,
-                        "Please select a lead source."
-                    );
-
-                    valid = false;
-
-                }
-
-
-                /* WEBSITE */
 
                 const website =
                     document.getElementById(
@@ -2085,20 +1765,27 @@ document.addEventListener(
                     );
 
 
-                if (
-                    website.value.trim()
-                    !== ""
-                ) {
+                const websiteValue =
+                    website.value.trim();
+
+
+                /* ---------------------------------------------
+                   WEBSITE IS OPTIONAL
+                --------------------------------------------- */
+
+                if (websiteValue !== "") {
 
                     try {
 
                         new URL(
-                            website.value.trim()
+                            websiteValue
                         );
 
                     }
 
                     catch (error) {
+
+                        event.preventDefault();
 
                         alert(
                             "Please enter a valid website URL."
@@ -2106,52 +1793,16 @@ document.addEventListener(
 
                         website.focus();
 
-                        valid = false;
+                        return;
 
                     }
 
                 }
 
 
-                /* STOP SUBMISSION */
-
-                if (!valid) {
-
-                    event.preventDefault();
-
-
-                    const firstInvalid =
-                        form.querySelector(
-                            ".invalid"
-                        );
-
-
-                    if (
-                        firstInvalid
-                    ) {
-
-                        firstInvalid.scrollIntoView({
-
-                            behavior:
-                                "smooth",
-
-                            block:
-                                "center"
-
-                        });
-
-
-                        firstInvalid.focus();
-
-                    }
-
-
-                    return;
-
-                }
-
-
-                /* SUBMITTING */
+                /* ---------------------------------------------
+                   SUBMITTING
+                --------------------------------------------- */
 
                 submitButton.disabled =
                     true;
@@ -2160,11 +1811,12 @@ document.addEventListener(
                 submitButton.textContent =
                     "Submitting...";
 
-
             }
+
         );
 
     }
+
 );
 
 </script>
